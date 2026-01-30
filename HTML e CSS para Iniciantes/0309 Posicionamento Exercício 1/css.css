@@ -64,7 +64,7 @@ a:hover {
 
 main {
   display: grid;
-  grid-template-columns: 500px 500px;
+  grid-template-columns: repeat(2, minmax(200px, 500px));
   place-content: center;
 }
 
@@ -108,12 +108,7 @@ button:hover {
 }
 
 .all_info {
-  display: grid;
-  position: relative;
-  place-items: center center;
-  text-align: start;
   padding: 4rem;
-  gap: 1rem;
   background-color: white;
 }
 
@@ -121,10 +116,15 @@ button:hover {
   margin-bottom: 0.5rem;
 }
 
-.all_info img {
-  position: absolute;
-  margin-top: 3px;
-  left: 30px;
+.info{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0rem 1rem;
+  padding: 1rem;
+}
+
+.info p{
+  grid-column: 2;
 }
 
 /* footer */
