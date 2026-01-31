@@ -1,0 +1,42 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.menu a {
+  display: block;
+  padding: 1rem 0;
+}
+
+.menu a:hover {
+  text-decoration: underline #6ab708 3px;
+  text-underline-offset: 6px;
+}
+
+@media (max-width: 800px) {
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu {
+    display: grid;
+    justify-items: center;
+    gap: 0rem;
+  }
+  .menu a {
+    font-size: 0.75rem;
+    padding: 1rem 0;
+  }
+}
