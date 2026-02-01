@@ -87,6 +87,24 @@ h6 {
 a,
 ul,
 li {
+  display: block;
   list-style: none;
   text-decoration: none;
+}
+
+@media (max-width: 1250px) {
+  body {
+    margin: 2rem 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    margin: 1rem 2rem;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    margin: 1rem 1rem;
+  }
 }

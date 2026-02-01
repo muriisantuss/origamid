@@ -1,0 +1,19 @@
+.sessoes {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 8.75rem;
+  margin: 7.5rem 0;
+}
+
+@media (max-width: 800px) {
+  .sessoes {
+    margin: 4rem 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .sessoes {
+    margin: 2rem 0;
+  }
+}
