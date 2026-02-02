@@ -1,12 +1,10 @@
 .sessao-2 {
-  grid-template-columns: 1fr 2fr;
   grid-template-rows: auto 1fr;
-  gap: 3.75rem 5rem;
-  align-items: start;
 }
 
 /* left side */
 .left {
+  align-self: start;
   grid-row: 1 / -1;
 }
 
@@ -14,6 +12,8 @@
   font-size: 9rem;
   line-height: 1;
   color: #e0e0e0;
+  word-break: break-all;
+  width: 4ch;
 }
 
 /* right side */
@@ -137,32 +137,21 @@
   }
 }
 
-@media (max-width: 668px) {
+@media (max-width: 670px) {
   .sessao-2 {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 0.3rem 0rem;
   }
   .left {
     grid-row: 1;
     display: flex;
-    justify-content: center;
+    justify-content: start;
   }
   .titulo-experiencia {
-    font-size: 0;
-    position: relative;
-  }
-  .titulo-experiencia::before {
-    content: "EXPERIÊNCIA";
-    display: block;
-    position: relative;
-    align-self: self-end;
     font-size: 4rem;
+    width: initial;
+    max-width: initial;
     line-height: 1.1;
-
-    margin: 0;
-    max-width: 100%;
-    color: #e0e0e0;
   }
 
   .info-texto {
@@ -176,13 +165,8 @@
   }
 }
 
-@media (max-width: 430px) {
-  .sessao-2 {
-    gap: 1rem 0rem;
-  }
-  .titulo-experiencia::before {
-    font-size: 2.5rem;
-  }
+@media (max-width: 450px) {
+
   .info-texto p {
     font-size: 1.25rem;
   }
@@ -213,12 +197,6 @@
   .info-experiencias {
     transform: scale(1) translateX(0%);
   }
-
-  .titulo-experiencia::before {
-    font-size: 2.2rem;
-    text-align: start;
-  }
-
   .sessoes-experiencias {
     padding: 0.85rem;
   }

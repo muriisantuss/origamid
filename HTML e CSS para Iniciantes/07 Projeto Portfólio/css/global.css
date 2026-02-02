@@ -30,8 +30,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-body {
-  margin: 2rem 6rem;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 3rem 8.75rem;
+  /* background: rgba(0, 145, 60, 0.421); */
+  /* gap: 4rem 6rem; */
 }
 
 /* 6. Improve media defaults */
@@ -93,18 +101,20 @@ li {
 }
 
 @media (max-width: 1250px) {
-  body {
-    margin: 2rem 3rem;
-  }
 }
 
-@media (max-width: 800px) {
-  body {
-    margin: 1rem 2rem;
+@media (max-width: 850px) {
+  .container {
+    gap: 4rem 4rem;
   }
 }
-@media (max-width: 400px) {
-  body {
-    margin: 1rem 1rem;
+@media (max-width: 670px) {
+  .container {
+    gap: 2rem 0rem;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    gap: 1rem 0rem;
   }
 }
