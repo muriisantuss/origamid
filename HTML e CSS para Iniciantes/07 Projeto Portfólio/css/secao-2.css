@@ -1,3 +1,5 @@
+/* secao-2.css */
+
 .secao-2 {
   grid-template-rows: auto 1fr;
   align-items: start;
@@ -85,6 +87,7 @@
   background: #ffffff;
 }
 
+/* Ajustes de Responsividade */
 @media (max-width: 1200px) {
   .lista-experiencias {
     gap: 0.625rem 0rem;
